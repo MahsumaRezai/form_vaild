@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%; }
+
+.body {
+  background: #eef3f8;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: black; }
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 5px; }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% auto;
+  flex-direction: column;
+  background-color: #d0e8ff;
+  width: 500px;
+  height: 550px;
+  margin-top: 100px;
+  box-shadow: 10px 10px 10px 10px gainsboro;
+  border-radius: 10px; }
+
+.form-content {
+  gap: 8px;
+  display: flex;
+  flex-direction: column; }
+
+.input__inp {
+  width: 400px;
+  height: 30px; }
+
+.select__sel {
+  width: 100px;
+  height: 20px; }
+
+.select__sel:hover {
+  background: gainsboro;
+  color: black; }
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .button__btn {
+    width: 100px;
+    height: 50px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    color: 30px;
+    font-style: italic;
+    font-weight: bold; }
