@@ -1,3 +1,4 @@
+// vaild date
 function data() {
     let username = document.getElementById("user").value;
     let emailadd = document.getElementById("email").vlaue;
