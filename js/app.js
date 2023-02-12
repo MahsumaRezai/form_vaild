@@ -6,21 +6,45 @@ function data() {
     let date = document.getElementById("db").value;
     let vaild = true;
     if (username == "") {
-        document.getElementById("suser").style.display = "inline";
+        document.getElementById("suser").innerText = "required";
         vaild = false;
+    }
+    else {
+        document.getElementById("suser").innerText = "";
+
     }
     if (emailadd == "") {
-        document.getElementById("semail").style.display = "inline";
+        document.getElementById("semail").innerText = "required"
         vaild = false;
+    }
+    else {
+        document.getElementById("semail").innerText = ""
+
     }
     if (pass == "") {
-        document.getElementById("spassword").style.display = "inline";
+        document.getElementById("spassword").innerText = "required"
         vaild = false;
+    }
+    else {
+        document.getElementById("spassword").innerText = ""
+
     }
     if (date == "") {
-        document.getElementById("sbd").style.display = "inline";
+        document.getElementById("sbd").innerText = "required"
         vaild = false;
     }
+    else {
+        document.getElementById("sbd").innerText = ""
 
+    }
+    window.setTimeout(time, 2000)
     return vaild;
+}
+// time function 
+function time() {
+    document.getElementById("suser").innerText = ""
+    document.getElementById("semail").innerText = ""
+    document.getElementById("spassword").innerText = ""
+    document.getElementById("sbd").innerText = ""
+
 }
