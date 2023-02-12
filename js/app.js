@@ -37,7 +37,7 @@ function data() {
         document.getElementById("sbd").innerText = ""
 
     }
-    window.setTimeout(time, 2000)
+    window.setTimeout(time, 5000)
     return vaild;
 }
 // time function 
