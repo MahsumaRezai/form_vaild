@@ -6,20 +6,21 @@ function data() {
     let date = document.getElementById("db").value;
     let vaild = true;
     if (username == "") {
-        alert("palse write your name");
+        document.getElementById("suser").style.display = "inline";
         vaild = false;
     }
     if (emailadd == "") {
-        alert("write your emali");
+        document.getElementById("semail").style.display = "inline";
         vaild = false;
     }
     if (pass == "") {
-        alert("write your password");
+        document.getElementById("spassword").style.display = "inline";
         vaild = false;
     }
     if (date == "") {
-        alert("write your date");
+        document.getElementById("sbd").style.display = "inline";
         vaild = false;
     }
+
     return vaild;
 }
