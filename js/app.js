@@ -9,6 +9,11 @@ function data() {
         document.getElementById("suser").innerText = "required";
         vaild = false;
     }
+    else if (username.indexOf(" ") > 0) {
+        document.getElementById("suser").innerText = "can not use space!";
+        vaild = false
+
+    }
     else {
         document.getElementById("suser").innerText = "";
 
@@ -37,7 +42,7 @@ function data() {
         document.getElementById("sbd").innerText = ""
 
     }
-    window.setTimeout(time, 5000)
+    window.setTimeout(time, 8000)
     return vaild;
 }
 // time function 
